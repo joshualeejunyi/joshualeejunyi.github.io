@@ -1,0 +1,903 @@
+/* 
+WCD CA2
+Filename: main.css
+Author: P1625439
+Date: 8 February 2017
+*/
+
+
+/*reset all styles*/
+
+article,
+aside,
+div,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+nav,
+body,
+head,
+img,
+section,
+figure,
+a,
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* import font */
+
+@font-face {
+    font-family: 'LeagueGothic-Regular';
+    src: url('fonts/LeagueGothic-Regular.eot');
+    src: url('fonts/LeagueGothic-Regular.woff2') format('woff2'), url('fonts/LeagueGothic-Regular.woff') format('woff'), url('fonts/LeagueGothic-Regular.ttf') format('truetype'), url('fonts/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('fonts/Gotham-Light.eot');
+    src: url('fonts/Gotham-Light.woff2') format('woff2'), url('fonts/Gotham-Light.woff') format('woff'), url('fonts/Gotham-Light.ttf') format('truetype'), url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.woff2') format('woff2'), url('fonts/Raleway-Medium.woff') format('woff'), url('fonts/Raleway-Medium.ttf') format('truetype'), url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* html */
+
+html {
+    background-image: url(images/seamless_paper_texture.png);
+    font-size: 18px;
+}
+
+
+/* body */
+
+body {
+    font-family: "Raleway-Medium";
+}
+
+
+/* container */
+
+.container {
+    margin: 0 auto;
+}
+
+
+/* header */
+
+header {
+    float: left;
+    padding-top: 0.5%;
+    padding-left: 5%;
+}
+
+
+/* nav */
+
+nav {
+    width: 60%;
+    float: right;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 5%;
+    padding-top: 1.2%;
+    font-family: "LeagueGothic-Regular";
+    color: #FFFFFF;
+    text-shadow: 1px 1px 10px #000000;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    text-shadow: 1px 1px 10px #000000;
+}
+
+
+/* a */
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+a:hover {
+    color: #FF3F80;
+}
+
+
+/* desktop navigate */
+
+.navigate {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px #888888;
+    position: fixed;
+    z-index: 99;
+    transition-duration: 1s;
+}
+
+
+/* navigate colour */
+
+.navigate.past-main {
+    background-color: #3E50B4;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+
+/* profile drop down button */
+
+.dropbtn {
+    font-family: "LeagueGothic-Regular";
+    font-size: 30px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.dropbtn:hover {
+    color: #FF4081;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 30px;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 0px 0px 0px #FFFFFF;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #FF4081;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* mobile spacer */
+
+.mobilespacer {
+    display: none;
+}
+
+
+/* greetings */
+
+.greeting {
+    font-size: 300%;
+    text-align: center;
+    font-family: "Gotham-Light";
+    padding-top: 20%;
+    color: white;
+    background-size: cover;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+
+/* home greeting */
+
+#homegreeting {
+    background-image: url(images/banners/homebanner.jpg);
+}
+
+
+/* profile greeting   */
+
+#profilegreeting {
+    background-image: url(images/banners/profilebanner.jpg);
+}
+
+
+/* life greeting */
+
+#lifegreeting {
+    background-image: url(images/banners/lifebanner.jpg);
+}
+
+
+/* education greeting */
+
+#edugreeting {
+    background-image: url(images/banners/edubanner.jpg);
+}
+
+
+/* cca greeting */
+
+#ccagreeting {
+    background-image: url(images/banners/ccabanner.jpg);
+}
+
+
+/* hobby greeting */
+
+#hobbygreeting {
+    background-image: url(images/banners/hobbybanner.jpg);
+}
+
+
+/* works greeting */
+
+#worksgreeting {
+    background-image: url(images/banners/worksbanner.jpg);
+}
+
+
+/* blog greeting */
+
+#bloggreeting {
+    background-image: url(images/banners/blogbanner.jpg);
+    height: 60vh;
+}
+
+
+/* white boxes */
+
+.whitebox {
+    margin: 0 auto;
+    min-height: 40vw;
+    width: 80%;
+    background-image: url(images/crossword.png);
+    box-shadow: 2px 2px 10px #888888;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.whiteboxheader {
+    text-align: center;
+    font-size: 40px;
+    padding: 2%;
+    text-decoration: underline;
+}
+
+.whiteboxcontentheader {
+    font-family: "LeagueGothic-Regular";
+    color: #000000;
+    text-align: left;
+    font-size: 250%;
+    margin-left: 1%;
+    padding: 1%;
+    padding-left: 6%;
+}
+
+
+/* introduction text */
+
+#profilepic {
+    float: left;
+    margin-left: 5%;
+    margin-top: 5vw;
+    padding: 0;
+}
+
+#profilepic img {
+    width: 20vw;
+}
+
+#profilepic figcaption {
+    width: 20vw;
+    text-align: center;
+    font-size: 50px;
+    font-family: "LeagueGothic-Regular";
+}
+
+#introtext {
+    text-align: left;
+    font-size: 1.8vw;
+    width: 50%;
+    float: right;
+    line-height: 1.5em;
+    position: relative;
+    top: 4em;
+    margin-right: 5%;
+    padding-left: 5%;
+    border-left: 3px solid #000000;
+}
+
+#introtext li {
+    list-style: none;
+}
+
+#contact {
+    background-image: url(images/crossword.png);
+    box-shadow: 2px 2px 10px #888888;
+}
+
+
+/* social media */
+
+.socialmedia {
+    width: 25%;
+    text-align: center;
+    font-size: 100%;
+    padding: 4%;
+    display: inline-block;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #3E50B4;
+    margin-top: 5%;
+    font-size: 20px;
+    padding: 1%;
+    text-align: right;
+    padding-right: 5%;
+    box-shadow: -1px -1px 10px #888888;
+    color: #FFFFFF;
+    clear: right;
+}
+
+
+/* contact form */
+
+fieldset {
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    background-image: url(images/crossword.png);
+    width: 500px;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+    font-size: 140%;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 10%;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    font-size: 100%;
+    padding: 2% 3% 2% 3%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+    width: 300px;
+    background-image: url(images/crossword.png);
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+}
+
+textarea {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    background: none;
+    min-width: 310px;
+    max-width: 310px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 2% 1% 2% 1%;
+    min-height: 20px;
+    display: inline-block;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#submit {
+    width: 20%;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #3E50B4;
+    border-bottom-color: #3E50B4;
+}
+
+#mobileform {
+    display: none;
+}
+
+
+/* results */
+
+#resultsgreeting {
+    display: none;
+}
+
+#resultsnav {
+    background-color: #3E50B4;
+}
+
+#resultsspacer {
+    display: inline;
+}
+
+#resultswhitebox {
+    display: block;
+    width: 50%;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+}
+
+
+/* profile */
+
+.profile {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+#profilecontentheader {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2vw;
+    padding: 2%;
+}
+
+.profilebutton {
+    font-family: "LeagueGothic-Regular";
+    font-size: 250%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    padding: 5%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    width: 50%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 10px #000000;
+}
+
+#profilelife {
+    background-image: url(images/profile/life.png);
+    background-position: center;
+}
+
+#profileedu {
+    background-image: url(images/profile/edu.png);
+    background-position: top;
+}
+
+#profilecca {
+    background-image: url(images/profile/cca.png);
+    background-position: bottom;
+}
+
+#profilehobby {
+    background-image: url(images/profile/hobby.png);
+    background-position: top;
+}
+
+/* profile templates */
+
+.text {
+    margin-left: 5%;
+    width: 35%;
+    font-size: 100%;
+    text-align: justify;
+    padding: 2%;
+    padding-top: 0;
+    max-height: 60vh;
+    overflow: auto;
+    margin-bottom: 10%;
+}
+
+.pic {
+    float: right;
+    margin-right: 2.5vw;
+    width: 40vw;
+}
+
+.caption {
+    font-size: 1.3vw;
+    text-align: center;
+    float: right;
+    width: 50%;
+    clear: right;
+    margin-right: 2.5vw;
+    font-style: italic;
+    padding: 1%;
+}
+
+#bbpic {
+    margin: 0;
+    margin-right: 13vw;
+    width: 20vw;
+}
+
+
+/* works */
+
+h3 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.workstext {
+    font-size: 140%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    text-align: justify;
+}
+
+.workstext a {
+    padding: 0;
+    color: #FF4081;
+    text-decoration: underline;
+}
+
+.worksgallery {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 120%;
+}
+
+#photography img {
+    width: 35vw;
+}
+
+#photoshop {
+    text-align: center;
+}
+
+#photoshop img {
+    padding-bottom: 5%;
+}
+
+
+/* blog */
+
+#mobilebloggreeting {
+    display: none;
+}
+
+
+/* hide mobile nav on desktop */
+
+.mobilenav {
+    display: none;
+}
+
+
+/* back to top */
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+/* Extra Things */
+
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 i {
+    color: #444;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 880px) {
+    /* hide desktop nav */
+    .navigate {
+        display: none;
+    }
+    /* hide greeting */
+    .greeting {
+        display: none;
+    }
+    /* spacer */
+    .mobilespacer {
+        display: inline;
+        margin: 0;
+    }
+    /* mobile nav */
+    .mobilenav {
+        display: inline;
+        width: 100%;
+        background-color: #FF4081;
+        position: fixed;
+        box-shadow: 1px 1px 10px #888888;
+        z-index: 99;
+    }
+    .mobilenav a {
+        text-shadow: 0px 0px 0px #FFFFFF;
+    }
+    .mobilenav li {
+        text-shadow: 0px 0px 0px #FFFFFF;
+    }
+    .mobilenav h1 {
+        font-size: 100%;
+        color: #000000;
+    }
+    nav {
+        padding: 0;
+        padding-top: 2%;
+    }
+    /* mobile logo */
+    #mobilelogo {
+        height: 45px;
+        margin-top: 3%;
+    }
+    /* profile pic */
+    #profilepic {
+        float: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 10%;
+        text-align: center;
+    }
+    #profilepic img {
+        width: 60%;
+    }
+    #profilepic figcaption {
+        margin: 0 auto;
+        font-size: 300%;
+        width: 100%;
+        text-align: center;
+    }
+    /* introduction text */
+    #introtext {
+        width: 80%;
+        font-size: 130%;
+        margin: 0 auto;
+        margin-bottom: 30vh;
+        text-align: center;
+        border: none;
+        border-top: 3px solid #000000;
+        padding: 0;
+        padding-top: 5%;
+        margin-top: -10%;
+    }
+    /* white box */
+    .whitebox {
+        margin: 0 auto;
+        width: 95%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        margin-top: 15%;
+    }
+    .whiteboxcontentheader {
+        font-size: 210%;
+        text-align: center;
+        padding: 2%;
+    }
+    .whiteboxheader {
+        font-size: 170%;
+        padding: 5%;
+    }
+    /* social media */
+    .socialmedia {
+        display: block;
+        margin: 0 auto;
+        padding: 5%;
+    }
+    .socialmedia img {
+        width: 100%;
+    }
+    .socialmedia h2 {
+        font-size: 140%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .submitbutton input {
+        width: 25%;
+    }
+    /* profile templates */
+    .profile a {
+        display: block;
+        margin: 0 auto;
+        font-size: 200%;
+        width: 60%;
+        margin-bottom: 2%;
+    }
+    .pic {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .caption {
+        font-size: 120%;
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        font-style: italic;
+    }
+    .text {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 120%;
+        border: 1px solid #000000;
+        padding: 2%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    #bbpic {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #photography {
+        margin: 0 auto;
+        padding: 0;
+        display: inline;
+    }
+    #photography img {
+        margin: 0 auto;
+        width: 70%;
+        margin-left: 13%;
+    }
+    /* footer */
+    footer {
+        margin: 0;
+        padding: 0;
+        padding: 2%;
+        font-size: 90%;
+        text-align: center;
+        background-color: #FF4081;
+        color: #000000;
+    }
+    /* mobile form */
+    #form {
+        display: none;
+    }
+    #mobileform {
+        margin: 0 auto;
+        display: inline-block;
+        width: 100vw;
+        text-align: center;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    #mobileformtext {
+        font-size: 140%;
+    }
+    #mobileform h2 {
+        font-size: 130%;
+        width: 50%;
+        margin: 0 auto;
+        padding: 2%;
+        margin-top: 1%;
+        border: 2px solid #000000;
+    }
+    fieldset {
+        padding: 0;
+        margin: 0 auto;
+        border: none;
+        background-image: url(images/crossword.png);
+        width: 100%;
+    }
+    #bloggreeting {
+        display: inline;
+        color: transparent;
+        font-size: 150%;
+    }
+    #mobilebloggreeting {
+        display: inline;
+        font-size: 200%;
+        margin-top: 20%;
+        text-align: center;
+    }
+}

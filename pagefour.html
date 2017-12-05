@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Where's Jesus</title>
+    <!-- viewport-->
+    <meta name="viewport" content="width=device-width">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    <!-- website icon -->
+    <link rel="icon" href="icon.ico" type="image/ico" sizes="16x16">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img class="logo" src="logo.png"></a>
+            <h2 class='title'>WHERE'S<br>JESUS?</h2>
+        </header>
+    </section>
+
+    <section class="container">
+        <p class="text">
+            At about that time, the Wise Men from the faraway lands arrived in Jerusalem, asking, "Where is the new-born King of the Jews? For we have seen his star in far-off eastern lands and have come to worship him" There was a prophecy which sai the Saviour would be born in Bethlemen, so the Wise Men went there.
+            <br><br>
+            Look! The star appeared to them again, standing over Bethlehem. They were so joyful! Entering the house where Jesus was, they threw themselves down to worship him. Then they opened their presents and gave him gold, frankincense, and myrrh.
+        </p>
+
+        <section class="userinput">
+            <form onsubmit="return false;">
+                <h2>
+                    <strong>Find Jesus who was worshipped and acknowledged by the wise men as the "King of the Jews".</strong>
+                </h2>
+                <input type="number" name="q4ans" id="ans" placeholder="Code">
+                <br> 
+                <button type="button" onclick="myFunction()">Next </button>
+                <p id="wrongtext"></p>
+            </form>
+        </section>
+    </section>
+
+    <script>
+        function myFunction() {
+            var x, text;
+            var wrongArray = ["You did not find it, did you? Try again!", "Nice try but no. Try again!", "Seriously? Try again!", "Nah man. Try again!", "Hay bruh you're not doing this right. Try again!", "Dude you gotta look for the code. Try again!", "Not so easy, huh? Try again!"];
+            
+            x = document.getElementById("ans").value;
+            
+            if (x == 523) {
+                window.location.href = "pagefive.html";
+                text = " ";
+            } else if (x == "") {
+                text = "Hey please enter an answer!"
+                window.alert(text);    
+            } else {
+                text = wrongArray[Math.floor(Math.random()*wrongArray.length)];
+                window.alert(text);    
+            } /*document.getElementById("wrongtext").innerHTML = text;*/
+        }
+
+    </script>
+</body>
